@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04F5A1C92C345A550088ABBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1C82C345A550088ABBE /* AppDelegate.swift */; };
 		04F5A1CB2C345A550088ABBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1CA2C345A550088ABBE /* SceneDelegate.swift */; };
-		04F5A1CD2C345A550088ABBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1CC2C345A550088ABBE /* ViewController.swift */; };
+		04F5A1CD2C345A550088ABBE /* WelcomeViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1CC2C345A550088ABBE /* WelcomeViewControler.swift */; };
 		04F5A1D02C345A550088ABBE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 04F5A1CF2C345A550088ABBE /* Base */; };
 		04F5A1D32C345A550088ABBE /* PixelWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1D12C345A550088ABBE /* PixelWorld.xcdatamodeld */; };
 		04F5A1D52C345A560088ABBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F5A1D42C345A560088ABBE /* Assets.xcassets */; };
@@ -17,6 +17,10 @@
 		04F5A1E32C345A560088ABBE /* PixelWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1E22C345A560088ABBE /* PixelWorldTests.swift */; };
 		04F5A1ED2C345A560088ABBE /* PixelWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1EC2C345A560088ABBE /* PixelWorldUITests.swift */; };
 		04F5A1EF2C345A560088ABBE /* PixelWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1EE2C345A560088ABBE /* PixelWorldUITestsLaunchTests.swift */; };
+		04F5A1FD2C34607D0088ABBE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A1FC2C34607D0088ABBE /* CustomButton.swift */; };
+		04F5A2012C358FD40088ABBE /* ChooseFationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A2002C358FD40088ABBE /* ChooseFationViewController.swift */; };
+		04F5A2032C35AF280088ABBE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A2022C35AF280088ABBE /* Character.swift */; };
+		04F5A2052C384F880088ABBE /* InGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A2042C384F880088ABBE /* InGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 		04F5A1C52C345A550088ABBE /* PixelWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F5A1C82C345A550088ABBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F5A1CA2C345A550088ABBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04F5A1CC2C345A550088ABBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04F5A1CC2C345A550088ABBE /* WelcomeViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControler.swift; sourceTree = "<group>"; };
 		04F5A1CF2C345A550088ABBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F5A1D22C345A550088ABBE /* PixelWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PixelWorld.xcdatamodel; sourceTree = "<group>"; };
 		04F5A1D42C345A560088ABBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,10 @@
 		04F5A1E82C345A560088ABBE /* PixelWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F5A1EC2C345A560088ABBE /* PixelWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWorldUITests.swift; sourceTree = "<group>"; };
 		04F5A1EE2C345A560088ABBE /* PixelWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04F5A1FC2C34607D0088ABBE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		04F5A2002C358FD40088ABBE /* ChooseFationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFationViewController.swift; sourceTree = "<group>"; };
+		04F5A2022C35AF280088ABBE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		04F5A2042C384F880088ABBE /* InGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,11 @@
 		04F5A1C72C345A550088ABBE /* PixelWorld */ = {
 			isa = PBXGroup;
 			children = (
+				04F5A1FE2C358EED0088ABBE /* Controller */,
+				04F5A1FF2C358F010088ABBE /* Model */,
+				04F5A1FB2C34600B0088ABBE /* View */,
 				04F5A1C82C345A550088ABBE /* AppDelegate.swift */,
 				04F5A1CA2C345A550088ABBE /* SceneDelegate.swift */,
-				04F5A1CC2C345A550088ABBE /* ViewController.swift */,
 				04F5A1CE2C345A550088ABBE /* Main.storyboard */,
 				04F5A1D42C345A560088ABBE /* Assets.xcassets */,
 				04F5A1D62C345A560088ABBE /* LaunchScreen.storyboard */,
@@ -128,6 +138,32 @@
 				04F5A1EE2C345A560088ABBE /* PixelWorldUITestsLaunchTests.swift */,
 			);
 			path = PixelWorldUITests;
+			sourceTree = "<group>";
+		};
+		04F5A1FB2C34600B0088ABBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F5A1FC2C34607D0088ABBE /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F5A1FE2C358EED0088ABBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F5A1CC2C345A550088ABBE /* WelcomeViewControler.swift */,
+				04F5A2002C358FD40088ABBE /* ChooseFationViewController.swift */,
+				04F5A2042C384F880088ABBE /* InGameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04F5A1FF2C358F010088ABBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F5A2022C35AF280088ABBE /* Character.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F5A1CD2C345A550088ABBE /* ViewController.swift in Sources */,
+				04F5A2012C358FD40088ABBE /* ChooseFationViewController.swift in Sources */,
+				04F5A1CD2C345A550088ABBE /* WelcomeViewControler.swift in Sources */,
+				04F5A2032C35AF280088ABBE /* Character.swift in Sources */,
 				04F5A1D32C345A550088ABBE /* PixelWorld.xcdatamodeld in Sources */,
 				04F5A1C92C345A550088ABBE /* AppDelegate.swift in Sources */,
+				04F5A2052C384F880088ABBE /* InGameViewController.swift in Sources */,
 				04F5A1CB2C345A550088ABBE /* SceneDelegate.swift in Sources */,
+				04F5A1FD2C34607D0088ABBE /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

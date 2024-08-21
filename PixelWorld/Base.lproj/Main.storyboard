@@ -1,24 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="PixelWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-xg-b0K">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pixel World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5u-UU-mrt">
+                                <rect key="frame" x="90" y="439" width="250" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="eBU-Lm-iIF"/>
+                                    <constraint firstAttribute="height" constant="80" id="gJT-Yd-vSx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wC-ia-ZMK" customClass="CustomButton" customModule="PixelWorld" customModuleProvider="target">
+                                <rect key="frame" x="115" y="783" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GZV-gm-zQo"/>
+                                    <constraint firstAttribute="width" constant="200" id="HMq-kl-UPE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choose Facation">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" red="0.58894439272044863" green="0.58894439272044863" blue="0.58894439272044863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.6365778028350515" green="0.6365778028350515" blue="0.6365778028350515" alpha="0.70272640306122447" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0KE-7O-gMj" kind="show" id="afb-dY-sOI"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zhe-Tw-dtG">
+                                <rect key="frame" x="120" y="219" width="190" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="snL-Pd-FxP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v4h-xg-b0K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Zj-Jn-J8s"/>
+                            <constraint firstItem="v4h-xg-b0K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B5o-O4-KWP"/>
+                            <constraint firstAttribute="bottom" secondItem="v4h-xg-b0K" secondAttribute="bottom" id="Jon-2K-4M8"/>
+                            <constraint firstItem="k5u-UU-mrt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K6m-QT-k7P"/>
+                            <constraint firstItem="k5u-UU-mrt" firstAttribute="top" secondItem="Zhe-Tw-dtG" secondAttribute="bottom" constant="70" id="PuY-GS-3j4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zhe-Tw-dtG" secondAttribute="trailing" constant="120" id="Soi-GE-WDh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9wC-ia-ZMK" secondAttribute="bottom" constant="80" id="Y5B-Qh-9wS"/>
+                            <constraint firstItem="v4h-xg-b0K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Ysw-LA-zqW"/>
+                            <constraint firstItem="Zhe-Tw-dtG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="hTh-BY-0KI"/>
+                            <constraint firstItem="Zhe-Tw-dtG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="pnN-1H-PD3"/>
+                            <constraint firstItem="Zhe-Tw-dtG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qB3-SF-4Hq"/>
+                            <constraint firstItem="9wC-ia-ZMK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rma-LI-6hW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-321" y="-446"/>
+        </scene>
+        <!--Choose Fation View Controller-->
+        <scene sceneID="eYi-nx-cUq">
+            <objects>
+                <viewController id="0KE-7O-gMj" customClass="ChooseFationViewController" customModule="PixelWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k30-sW-KfW">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_character_faction_bg" translatesAutoresizingMaskIntoConstraints="NO" id="SRt-nj-uCv">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fla-GX-fKh">
+                                <rect key="frame" x="90" y="75" width="250" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magiclan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTH-Ui-bUh">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="jU4-kB-Bse"/>
+                                            <constraint firstAttribute="width" constant="250" id="x39-aq-Z8f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="37"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4W-nG-FKe">
+                                        <rect key="frame" x="0.0" y="90" width="250" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="RKy-Rd-g7D"/>
+                                            <constraint firstAttribute="height" constant="80" id="Z9c-em-A2N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="37"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="clD-hj-qom"/>
+                                    <constraint firstAttribute="height" constant="170" id="qlh-tW-fqs"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTL-H1-Tcd" customClass="CustomButton" customModule="PixelWorld" customModuleProvider="target">
+                                <rect key="frame" x="115" y="807" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="R0x-xw-rvI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="XCI-SH-kzo"/>
+                                    <constraint firstAttribute="height" constant="35" id="as5-LF-CFN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="b2G-0i-Rh5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Game">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" red="0.58894439269999999" green="0.58894439269999999" blue="0.58894439269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.63657780279999998" green="0.63657780279999998" blue="0.63657780279999998" alpha="0.70272640310000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onStartGamePressed:" destination="0KE-7O-gMj" eventType="touchUpInside" id="k9u-6a-rti"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87k-va-ais">
+                                <rect key="frame" x="10" y="32" width="90" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Va8-nb-qs3"/>
+                                    <constraint firstAttribute="width" constant="90" id="l8E-pH-eeb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Back">
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gAP-ih-j6S" kind="unwind" unwindAction="fromChooseFactionWithSugue:" id="fFk-fp-nwP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r5M-9p-DbF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SRt-nj-uCv" firstAttribute="leading" secondItem="k30-sW-KfW" secondAttribute="leading" id="6pI-sf-qGw"/>
+                            <constraint firstItem="fla-GX-fKh" firstAttribute="top" secondItem="r5M-9p-DbF" secondAttribute="top" constant="75" id="Pet-p7-r2P"/>
+                            <constraint firstItem="r5M-9p-DbF" firstAttribute="bottom" secondItem="KTL-H1-Tcd" secondAttribute="bottom" constant="80" id="QmH-zd-S06"/>
+                            <constraint firstItem="fla-GX-fKh" firstAttribute="centerX" secondItem="k30-sW-KfW" secondAttribute="centerX" id="S8w-8W-T5n"/>
+                            <constraint firstItem="SRt-nj-uCv" firstAttribute="top" secondItem="k30-sW-KfW" secondAttribute="top" id="UqI-Pb-8Lu"/>
+                            <constraint firstItem="SRt-nj-uCv" firstAttribute="trailing" secondItem="r5M-9p-DbF" secondAttribute="trailing" id="eRX-Wf-fLP"/>
+                            <constraint firstItem="87k-va-ais" firstAttribute="leading" secondItem="k30-sW-KfW" secondAttribute="leading" constant="10" id="n62-Xd-aD1"/>
+                            <constraint firstItem="KTL-H1-Tcd" firstAttribute="centerX" secondItem="k30-sW-KfW" secondAttribute="centerX" id="pjL-o4-tOF"/>
+                            <constraint firstAttribute="bottom" secondItem="SRt-nj-uCv" secondAttribute="bottom" id="vdl-dE-2es"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="83d-PX-ln7"/>
+                    <connections>
+                        <outlet property="armorLable" destination="g4W-nG-FKe" id="cHy-VA-3Ji"/>
+                        <outlet property="magicianLable" destination="FTH-Ui-bUh" id="Png-mX-s9F"/>
+                        <outlet property="startGamebtn" destination="KTL-H1-Tcd" id="gG7-eg-cT1"/>
+                        <segue destination="Rkf-l2-XBK" kind="show" identifier="inGameSegue" id="kN9-15-BKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVe-da-ei9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gAP-ih-j6S" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-446"/>
+        </scene>
+        <!--In Game View Controller-->
+        <scene sceneID="Ngn-kd-FtS">
+            <objects>
+                <viewController id="Rkf-l2-XBK" customClass="InGameViewController" customModule="PixelWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LGB-RF-7dU">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg" translatesAutoresizingMaskIntoConstraints="NO" id="DUk-RB-jdq">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xyx-WW-Fkh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DUk-RB-jdq" firstAttribute="trailing" secondItem="xyx-WW-Fkh" secondAttribute="trailing" id="7Ib-zb-WKP"/>
+                            <constraint firstAttribute="bottom" secondItem="DUk-RB-jdq" secondAttribute="bottom" id="KPS-Rd-hJR"/>
+                            <constraint firstItem="DUk-RB-jdq" firstAttribute="leading" secondItem="xyx-WW-Fkh" secondAttribute="leading" id="e95-DR-P9Z"/>
+                            <constraint firstItem="DUk-RB-jdq" firstAttribute="top" secondItem="LGB-RF-7dU" secondAttribute="top" id="moR-wr-cuh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D08-tm-vxE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9U-aw-1xS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213.953488372093" y="-446.13733905579403"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="640" height="640"/>
+        <image name="select_character_faction_bg" width="133.66667175292969" height="238.33332824707031"/>
+        <image name="welcome_bg" width="164.33332824707031" height="241.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
